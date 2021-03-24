@@ -291,15 +291,16 @@ footer span {
 
 .menu {
 	height: 580px;
+	margin: auto;
 }
 
 .menu h3 {
 	text-transform: capitalize;
 	font-weight: normal;
 	color: #77a466;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 20px 0;
+    	font-size: 16px;
+    	line-height: 18px;
+   	padding: 20px 0;
 }
 
 .items {
