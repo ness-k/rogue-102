@@ -6,8 +6,8 @@ body {
 
 .container {
 	margin: 0 auto;
+	max-width: 1200px;
 	width: 80%;
-	min-width: 1200px;
 }
 
 
@@ -410,6 +410,7 @@ footer span {
 
 #reviews {
 	width: 100%;
+	max-width: 1200px;
 	margin: auto;
 }
 
