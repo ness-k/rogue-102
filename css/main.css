@@ -318,6 +318,55 @@ footer {
 .menu-items {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -0.5em;
+}
+
+.menu {
+	height: 580px;
+	margin: auto;
+}
+
+.menu h3 {
+	text-transform: capitalize;
+	font-weight: normal;
+	color: #77a466;
+        font-size: 16px;
+        line-height: 18px;
+   	padding: 20px 0;
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.salad,
+.burrito,
+.tamales {
+	padding: 0;
+	flex: auto;
+	min-width: 150px;
+}
+
+.salad img,
+.burrito img,
+.tamales img {
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	border: 4px double #77a466;
+}
+
+.salad p,
+.burrito p,
+.tamales p {
+	padding: 0;
+	max-width: 95%;
+	text-align: justify;
+}
+
+.menu-footer h3 {
+	padding: auto;
 }
 
 
