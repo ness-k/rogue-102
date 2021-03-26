@@ -4,6 +4,10 @@ body {
 	font-family: Montserrat, sans-serif;
 }
 
+main {
+	margin: 0 auto;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -15,11 +19,9 @@ body {
 
 h1,
 h2,
-h3,
 h4 {
 	color: #000000;
 	font-weight: 700;
-	line-height: 23px;
 	text-transform: uppercase;
 }
 
@@ -35,7 +37,23 @@ h2 {
 }
 
 h3 {
-	font-size: 12px;
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 16px;
+	color: #77a466;
+}
+
+.footer h3 {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.footer h3 span {
+	color: #77a466;
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
 }
 
 
@@ -44,14 +62,21 @@ h3 {
 p {
 	color: #333;
 	font-size: 16px;
-	padding: 0 30px;
+	padding: 0;
 }
 
 
-/* UNORDERED LIST STYLES */
+/* LIST STYLES */
 
 ul {
 	list-style: none;
+}
+
+
+/* LINK STYLES */
+
+a {
+	text-decoration: none;
 }
 
 
@@ -64,12 +89,11 @@ ul {
 
 header {
 	border-bottom: 3px solid #77a466;
-	height: 112px;
-	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -80,7 +104,6 @@ header h1 span {
 
 header nav {
 	color: #77a466;
-	float: right;
 	padding: 46px 0;
 }
 
@@ -101,14 +124,6 @@ header nav ul li a {
 	line-height: 23px;
 	text-decoration: none;
 	text-transform: uppercase;
-}
-
-
-/* TOP AND BOTTOM SECTION */
-
-.top-section,
-.bottom-section {
-	margin: 0 auto;
 }
 
 
@@ -145,17 +160,23 @@ header nav ul li a {
 
 .bottom-section h3 {
 	line-height: 25px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
 }
 
 
-/* SECTION ONE, TWO AND THREE */
+/* SECTIONS */
 
 .section-one,
 .section-two,
 .section-three {
 	border-top: 1px solid #eee;
 	height: auto;
-	width: 399px;
+	width: 398px;
+	box-sizing: border-box;
+	padding: 10px;
 }
 
 .section-one h3 {
@@ -163,13 +184,16 @@ header nav ul li a {
 }
 
 .section-two {
+	padding-bottom: 20px;
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -10px;
 }
 
 
@@ -200,6 +224,11 @@ header nav ul li a {
 	line-height: 24px;
 }
 
+.contact p {
+	padding: 0;
+	margin: 0;
+}
+
 
 /* FOOTER SECTION */
 
@@ -211,23 +240,10 @@ footer {
 	border-top: 3px solid #77a466;
 }
 
-footer h3 {
-	font-size: 16px;
-}
-
-footer span {
-	color: #77a466;
-	font-family: 'Galada', cursive;
-	text-transform: lowercase;
-}
 
 
 /* ABOUT STYLES */
 
-
-.our-story {
-	height: auto;
-}
 
 .our-story p {
 	line-height: 25px;
@@ -240,6 +256,8 @@ footer span {
 
 .meet h3{
 	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
 	color: #77a466;
 }
 
@@ -255,8 +273,8 @@ footer span {
 }
 
 .meet p {
-	margin-left: -30px;
 	font-size: 13px;
+	max-width:  90%;
 }
 
 .our-team {
@@ -281,129 +299,80 @@ footer span {
 	align-items: flex-start;
 }
 
-.about-footer h3 {
-	padding: auto;
-}
-
 
 
 /* MENU STYLES */
 
-.menu {
-	height: 580px;
+.item {
+	margin: 0 1rem;
+	flex: 1 1 30%;
+	min-width: 200px;
 }
 
-.menu h3 {
-	text-transform: capitalize;
-	font-weight: normal;
-	color: #77a466;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 20px 0;
-}
-
-.items {
-	display: flex;
-
-}
-
-.salad,
-.burrito,
-.tamales {
-	padding: 0;
-	flex: auto;
-}
-
-.salad,
-.burrito {
-	margin-right: 1.25rem;
-}
-
-.salad img,
-.burrito img,
-.tamales img {
-	width: 90%;
+.item img {
+	width: 100%;
 	height: auto;
-	border: 4px double #77a466;
+	border: 4px double #7aa466;
 }
 
-.salad p,
-.burrito p,
-.tamales p {
-	margin-left: -30px;
-	max-width: 95%;
-	text-align: justify;
+.menu-items {
+	display: flex;
+	flex-wrap: wrap;
 }
-
-.menu-footer h3 {
-	padding: auto;
-}
-
 
 
 /* LOCATIONS STYLES */
 
 .locations {
-	width: 100%;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-}
-
-.address h3 {
-	text-transform: capitalize;
-	font-weight: normal;
-	color: #77a466;
-    font-size: 16px;
-}
-
-.address p {
-	margin: 0;
-	padding: 0;
-}
-
-.map iframe {
-	width: 300px;
-	height: 300px;
-	border: 4px double #77a466;
+	flex-wrap: wrap;
 }
 
 #Victoria_Park,
 #St_Albans,
 #Balham {
-	margin: 3rem auto 0 auto;
+	margin: 0 1.5rem;
+	flex: auto;
 }
 
+.map iframe {
+	width: 100%;
+	min-width: 250px;
+	height: 300px;
+	border: 4px double #77a466;
+	margin-top: 2rem;
+}
+
+.address p {
+	margin: 4px 0;
+}
 
 
 /* GALLERY STYLES */
 
-#gallery {
-	width: 100%;
-	margin: auto;
+.gallery-grid {
+	margin-left: -3rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.gallery {
-	margin: auto;
-	display: grid;
-	grid-template-rows: repeat(4, 300px);
-	grid-template-columns: repeat(3, 1fr);
-	justify-items: center;
-	justify-content:  center;
-	align-items: center;
-	align-content: center;
+.gallery-image {
+	list-style: none;
+	padding-left: 0;
+	width: 38vh;
+	flex-grow: 1;
+	margin: 1em;
 }
 
-.grid {
-	margin:  5%;
-}
-
-.grid img {
-	width: 350px;
-	height: 250px;
+.gallery-image img {
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
 	border: 4px double #77a466;
 }
-
-
 
 
 /* REVIEWS STYLES */
@@ -416,6 +385,7 @@ footer span {
 
 .customer-reviews-section {
 	display: flex;
+	flex-wrap: wrap;
 	margin: -1rem auto;
 }
 
@@ -423,11 +393,11 @@ footer span {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex: 1 1 340px;
 }
 
 .review {
-	width: 340px;
-	margin: 2rem auto;
+	margin: 2rem 1rem;
 	box-sizing: content-box;
 	padding: 2rem 1rem;
 	border-radius: 1rem;
@@ -435,19 +405,14 @@ footer span {
 	background-color: #77a46612;
 }
 
-#middle {
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
 
 .name-and-rating {
 	display: flex;
 }
 
 .review h3 {
-	text-transform: capitalize;
 	font-size: 20px;
-	font-weight: normal;
+	color: #000000;
 }
 
 .review img {
